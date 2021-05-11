@@ -87,8 +87,10 @@
           
           
           
-          <!--/stories-->
-          <form action="#" class="col-lg-5-signin"  style = "width: 50%; margin-left: 25%; margin-top: 5%;" onsubmit="window.alert('Book has been added to the Library');">
+        <!--/stories-->
+
+
+          <!-- <form action="#" class="col-lg-5-signin"  style = "width: 50%; margin-left: 25%; margin-top: 5%;" onsubmit="window.alert('Book has been added to the Library');">
             <div class="mb-3">
               <label for="title" class="form-label" style="margin-left: 44%;">Title</label>
               <input type="text" class="form-control" id="title" placeholder = "Enter Title of Book" required aria-describedby="emailHelp">
@@ -127,8 +129,16 @@
               </div>
             <br>
             <button type="submit" class="btn btn-primary" style="margin-left: 40%;">Submit</button>
-          </form>                                     
-                 
+          </form>                                      -->
+        <div class="row">
+          <form method="POST" action="/admin/add">
+            Title: <input type="text" name="title"> <br>
+            Author: <input type="text" name="author"><br>
+            Genre: <input type="text" name="genre"><br>
+            Image: <input type="file" name="image"><br>
+            <button type="submit">Add</button> <br>
+          </form>
+        </div>         
         
         
 
